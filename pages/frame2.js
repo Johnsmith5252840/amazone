@@ -1,7 +1,7 @@
 import Header from './componants/Header';
 import { Box, Typography, useMediaQuery, Grid, Container } from '@mui/material';
 import Image from 'next/image';
-import copy from "../assets/copy.png"
+import copy from "../assets/Copy.png"
 import arrow from "../assets/arrow.png"
 import sign from "../assets/sign.png";
 import check from "../assets/check.png";
