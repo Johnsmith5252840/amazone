@@ -9,7 +9,7 @@ export default function Home() {
       <Box className="banner">
         <Box>
           <Box className="spiner">
-            <CircularProgress size={desktop?"15rem":"8rem"} sx={{color:"white"}}/>
+            <CircularProgress size={desktop?"13rem":"8rem"} sx={{color:"white"}}/>
           </Box>
           <Typography color="white" fontSize={desktop?"32px":"16px"} fontWeight="700" fontStyle="italic" sx={{textAlign:"center"}}>Aportando na retirada de créditos de carbono...</Typography>
         </Box>

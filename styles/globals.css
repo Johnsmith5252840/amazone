@@ -26,16 +26,17 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 137px;
+  margin-bottom: 120px;
   /* background-image: url("../assets/banner.png"); */
   position: relative;
   width: 20rem;
-  margin-left: 15rem;
+  margin-left: 13rem;
 }
 
 .banner {
   margin-top: -30px;
   background-image: url("../assets/banner.png");
+  height:100vh;
   background-size: cover;
   display: flex;
   align-items: center;
