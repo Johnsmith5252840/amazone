@@ -30,7 +30,7 @@ export default function Frame2() {
                             <Typography fontSize={desktop?"40px":"30px"} fontWeight="700" color="white">Certificate #1</Typography>
                         </Box>
                         <Box className="btn" sx={{mt:"5% !important"}}>
-                            <a style={{ fontSize: desktop?"32px":"20px", color: "white" }}>Voltar</a>
+                            <a href="/frame3" style={{ fontSize: desktop?"32px":"20px", color: "white" }}>Voltar</a>
                         </Box>
                     </Box>
                 </Grid>

@@ -22,6 +22,9 @@ export default function Frame3() {
                     desktop ?
                         <>
                             <Grid item xs={desktop ? 6 : 12} className="mockupLeft" sx={{ paddingY: { sm: 2, md: 4 } }}>
+                                <Box display="flex" justifyContent="center" mt="30px">
+                                    <Image src={sign} width={desktop ? '70%' : 300} height={desktop ? "30%" : 200} style={{ borderRadius: "30px" }} />
+                                </Box>
                                 <Box className="btn" onClick={openModal} sx={{ cursor: "pointer" }}>
                                     <a style={{ fontSize: "32px", color: "white" }}>Ver NFT</a>
                                 </Box>
@@ -29,11 +32,11 @@ export default function Frame3() {
                             <Grid item xs={desktop ? 6 : 12} className="mockupRight">
                                 <Box display="flex" justifyContent="center">
                                     <Box>
-                                        <Box className="profile" sx = {{display:'flex', justifyContent:'flex-end'}}>
+                                        <Box className="profile" sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                                             <Image src={profile} className="avartar"></Image>
-                                            <Box sx = {{display:'flex', flexDirection:'column',alignItems:'start'}}>
-                                            <Typography fontSize="35px"><strong>Alejandro </strong>González</Typography>
-                                            <Typography fontSize="35px">Navarro</Typography>
+                                            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
+                                                <Typography fontSize="35px"><strong>Alejandro </strong>González</Typography>
+                                                <Typography fontSize="35px">Navarro</Typography>
                                             </Box>
                                         </Box>
                                         <Box gap={2} sx={{ mt: "4rem" }}>
@@ -46,13 +49,13 @@ export default function Frame3() {
                         </> :
                         <>
                             <Grid item xs={desktop ? 6 : 12} className="mockupRight">
-                                <Box display="flex" justifyContent="center" sx={{mt:"10%"}}>
+                                <Box display="flex" justifyContent="center" sx={{ mt: "10%" }}>
                                     <Box>
-                                        <Box className="profile" sx = {{display:'flex', justifyContent:'flex-end'}}>
+                                        <Box className="profile" sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                                             <Image src={profile} className="avartar"></Image>
-                                            <Box sx = {{display:'flex', flexDirection:'column',alignItems:'start'}}>
-                                            <Typography fontSize="18px" ><strong>Alejandro </strong>González</Typography>
-                                            <Typography fontSize="18px">Navarro</Typography>
+                                            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
+                                                <Typography fontSize="18px" ><strong>Alejandro </strong>González</Typography>
+                                                <Typography fontSize="18px">Navarro</Typography>
                                             </Box>
                                         </Box>
                                         <Box gap={2} sx={{ mt: "4rem" }}>
@@ -63,6 +66,9 @@ export default function Frame3() {
                                 </Box>
                             </Grid>
                             <Grid item xs={desktop ? 6 : 12} className="mockupLeft">
+                                <Box display="flex" justifyContent="center" mt="30px">
+                                    <Image src={sign} width={desktop ? '70%' : 300} height={desktop ? "30%" : 200} style={{ borderRadius: "30px" }} />
+                                </Box>
                                 <Box className="btn" onClick={openModal} sx={{ cursor: "pointer" }}>
                                     <a style={{ fontSize: "12px", color: "white" }}>Ver NFT</a>
                                 </Box>
