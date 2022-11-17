@@ -13,7 +13,7 @@ export default function Frame2() {
             <Header />
             <Grid container>
                 <Grid item xs={desktop ? 6 : 12} className="signLeft">
-                    <Box sx={{padding:desktop?"150px":"20px"}}>
+                    <Box sx={{padding:desktop?"10%":"20px"}}>
                         <Box display="flex" justifyContent="space-between" sx={{mb:"50px"}}>
                             <Typography fontSize={desktop?"32px":"25px"} color="white">0x877...0A5c5</Typography>
                             <Box display="flex" gap={2}>
@@ -34,7 +34,7 @@ export default function Frame2() {
                         </Box>
                     </Box>
                 </Grid>
-                <Grid item xs={desktop ? 6 : 12} className="mockupRight" sx={{height:"100vh !important"}}>
+                <Grid item xs={desktop ? 6 : 12} className="mockupRight">
                    <Box sx={{padding:desktop?"150px":"50px", mt:desktop?"5%":"2%"}}>
                         <Typography fontSize={desktop?"32px":"20px"} fontWeight="700">Detalhes Blockchain</Typography>
                         <Box sx={{padding:desktop?"50px":"20px"}}>

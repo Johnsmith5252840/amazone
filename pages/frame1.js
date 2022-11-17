@@ -12,7 +12,7 @@ export default function Frame1() {
                 {
                     desktop ?
                         <>
-                            <Grid item xs={desktop ? 6 : 12} className="mockupLeft">
+                            <Grid item xs={desktop ? 6 : 12} className="mockupLeft" sx={{ paddingY: { sm: 2, md: 4 } }}>
                                 <Box className="btn">
                                     <a style={{ fontSize: "32px", color: "white" }}>Obter NFT</a>
                                 </Box>
@@ -20,9 +20,12 @@ export default function Frame1() {
                             <Grid item xs={desktop ? 6 : 12} className="mockupRight">
                                 <Box display="flex" justifyContent="center">
                                     <Box>
-                                        <Box className="profile">
-                                            <Typography fontSize="40px" sx={{ mr: "50px" }}><strong>Alejandro </strong>González</Typography>
-                                            <Typography fontSize="40px" textAlign="center">Navarro</Typography>
+                                        <Box className="profile" sx = {{display:'flex', justifyContent:'flex-end'}}>
+                                            <Image src={profile} className="avartar"></Image>
+                                            <Box sx = {{display:'flex', flexDirection:'column',alignItems:'start'}}>
+                                            <Typography fontSize="35px"><strong>Alejandro </strong>González</Typography>
+                                            <Typography fontSize="35px">Navarro</Typography>
+                                            </Box>
                                         </Box>
                                         <Box gap={2} sx={{ mt: "4rem" }}>
                                             <Typography fontSize="32px">Participação: <strong>Palestrante</strong></Typography>
@@ -31,15 +34,17 @@ export default function Frame1() {
                                     </Box>
                                 </Box>
                             </Grid>
-                            <Image src={profile} className="avartar"></Image>
                         </> :
                         <>
                             <Grid item xs={desktop ? 6 : 12} className="mockupRight">
-                                <Box display="flex" justifyContent="center">
+                                <Box display="flex" justifyContent="center" sx={{mt:"10%"}}>
                                     <Box>
-                                        <Box className="profile">
-                                            <Typography fontSize="18px" sx={{ mr: "15px" }}><strong>Alejandro </strong>González</Typography>
-                                            <Typography fontSize="18px" textAlign="center">Navarro</Typography>
+                                        <Box className="profile" sx = {{display:'flex', justifyContent:'flex-end'}}>
+                                            <Image src={profile} className="avartar"></Image>
+                                            <Box sx = {{display:'flex', flexDirection:'column',alignItems:'start'}}>
+                                            <Typography fontSize="18px" ><strong>Alejandro </strong>González</Typography>
+                                            <Typography fontSize="18px">Navarro</Typography>
+                                            </Box>
                                         </Box>
                                         <Box gap={2} sx={{ mt: "4rem" }}>
                                             <Typography fontSize="12px">Participação: <strong>Palestrante</strong></Typography>
@@ -53,7 +58,7 @@ export default function Frame1() {
                                     <a style={{ fontSize: "12px", color: "white" }}>Obter NFT</a>
                                 </Box>
                             </Grid>
-                            <Image src={profile} className="avartar"></Image></>
+                        </>
                 }
 
             </Grid>

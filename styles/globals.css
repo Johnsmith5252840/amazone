@@ -36,7 +36,6 @@ a {
 .banner {
   margin-top: -30px;
   background-image: url("../assets/banner.png");
-  height: 100vh;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -49,24 +48,21 @@ a {
 
 .mockupLeft {
   background-image: url("../assets/mockup.png");
-  height: 100vh;
   background-size: cover;
 }
 .signLeft {
   background-image: url("../assets/banner.png");
-  height: 100vh;
   background-size: cover;
 }
 
 .avartar {
   position: absolute;
-  left: 63%;
-  top: 43%
+  left: 1vw;
+  top: -50%
 }
 
 .mockupRight {
   background-image: url("../assets/mockup_right.png");
-  height: 100vh;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -76,10 +72,10 @@ a {
 .btn {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 60%;
   justify-content: center;
-  margin-left: 25%;
-  margin-top: 85%;
+  margin-left: 20%;
+  margin-top: 75%;
   padding: 20px 100px;
   background: linear-gradient(90deg, #F1445D -46.51%, rgba(255, 233, 237, 0) 294.55%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -87,10 +83,12 @@ a {
 }
 
 .profile {
-  width: 700px;
+  width: 40vw;
   background: #E8E8E8;
   border-radius: 24px;
   text-align: right;
+  position: relative;
+  padding: 15px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -129,7 +127,6 @@ a {
 
   .mockupRight {
     background-image: url("../assets/mockup_right.png");
-    height: 50vh;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -142,11 +139,11 @@ a {
     text-align: right;
   }
   .avartar {
-    width: 20%;
-    height: 12%;
+    width: 30%;
+    height: 100%;
     position: absolute;
-    left: 13%;
-    top: 25%
+    left: 5%;
+    top: -15%
   }
   .mockupLeft {
     background-image: url("../assets/mockup.png");
