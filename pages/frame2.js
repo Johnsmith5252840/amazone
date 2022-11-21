@@ -12,6 +12,7 @@ export default function Frame2() {
     const desktop = useMediaQuery('(min-width:1024px)');
     var router = useRouter();
     var participantID = router.query["participantId"];
+    var username = router.query["username"];
     const [address, setAddress] = useState('');
     const [tokenID, setTokenID] = useState('');
     const [description, setDescription] = useState('');
@@ -54,7 +55,7 @@ export default function Frame2() {
                         </Box>
                         <Box display="flex" justifyContent="center" mt="30px">
                             <Box className="box" sx={{ width: desktop ? '90%' : 300, height: desktop ? "60vh" : 200 }}>
-                                <Typography fontSize="32px" sx={{ ml: "60%", mt: "25%" }}>{name}</Typography>
+                                <Typography fontSize="32px" sx={{ ml: "60%", mt: "25%" }}>{username}</Typography>
                             </Box>
                         </Box>
                         <Box gap={2} sx={{ mt: "50px" }}>

@@ -69,7 +69,7 @@ export default function Index() {
                                     </Box>
                                 </Box>
                                 <Box className="btn">
-                                    <a href={`/spin?participantId=${participantID}`} style={{ fontSize: "32px", color: "white", cursor: "pointer" }}>Obter NFT</a>
+                                    <a href={`/spin?participantId=${participantID}&name=${name}`} style={{ fontSize: "32px", color: "white", cursor: "pointer" }}>Obter NFT</a>
                                 </Box>
                             </Grid>
                             <Grid item xs={desktop ? 6 : 12} className="mockupRight">
@@ -115,7 +115,7 @@ export default function Index() {
                                     </Box>
                                 </Box>
                                 <Box className="btn">
-                                    <a href={`/spin?participantId=${participantID}`} style={{ fontSize: "12px", color: "white", cursor: "pointer" }}>Obter NFT</a>
+                                    <a href={`/spin?participantId=${participantID}&name=${name}`} style={{ fontSize: "12px", color: "white", cursor: "pointer" }}>Obter NFT</a>
                                 </Box>
                             </Grid>
                         </>

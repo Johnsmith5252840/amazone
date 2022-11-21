@@ -8,10 +8,11 @@ export default function Home() {
   const desktop = useMediaQuery('(min-width:1024px)');
   var router = useRouter();
   var participantID = router.query["participantId"];
+  var name = router.query["name"];
   useEffect(() => {
     if(participantID){
       const interval = setInterval(() => {
-        window.location.href=`https://amazone-en1q.vercel.app/frame2?participantId=${participantID}`;
+        window.location.href=`https://amazone-en1q.vercel.app/frame2?participantId=${participantID}&username=${name}`;
       }, 5000);
     
       return () => clearInterval(interval);
