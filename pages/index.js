@@ -27,7 +27,7 @@ export default function Index() {
                 setName(result.data.name);
             })
             .catch(err => {
-                window.location.href = "https://amazone-en1q.vercel.app/pagenotfind"
+               
             })
         if (token && participantID) {
             axios.get(`https://amazonia-cripto.onrender.com/validateAccessToken/${token}/${participantID}`)
