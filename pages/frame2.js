@@ -44,7 +44,7 @@ export default function Frame2() {
                 <Grid item xs={desktop ? 6 : 12} className="signLeft">
                     <Box sx={{ padding: desktop ? "10%" : "20px" }}>
                         <Box display="flex" justifyContent="space-between" sx={{ mb: "50px" }}>
-                            <Typography fontSize={desktop ? "32px" : "25px"} color="white">{address.substring(0,5)} ...... {address.substring(address.length-5)}</Typography>
+                            <Typography fontSize={desktop ? "32px" : "25px"} color="white">{address.substring(0, 5)} ...... {address.substring(address.length - 5)}</Typography>
                             <Box display="flex" gap={2}>
                                 <Image src={copy} onClick={copyClipboard} style={{ cursor: 'pointer' }} />
                                 <Link href={`https://polygonscan.com/address/${address}`} target='_blank' >
@@ -53,7 +53,9 @@ export default function Frame2() {
                             </Box>
                         </Box>
                         <Box display="flex" justifyContent="center" mt="30px">
-                            <Image src={sign} width={desktop ? '70%' : 300} height={desktop ? "30%" : 200} style={{ borderRadius: "30px" }} />
+                            <Box className="box" sx={{ width: desktop ? '90%' : 300, height: desktop ? "60vh" : 200 }}>
+                                <Typography fontSize="32px" sx={{ ml: "60%", mt: "25%" }}>{name}</Typography>
+                            </Box>
                         </Box>
                         <Box gap={2} sx={{ mt: "50px" }}>
                             <Box display="flex" gap={2} sx={{ mb: "20px" }}>
@@ -73,7 +75,7 @@ export default function Frame2() {
                         <Box sx={{ padding: desktop ? "50px" : "20px" }}>
                             <Box display="flex" justifyContent="space-between">
                                 <Typography fontSize={desktop ? "24px" : "15px"}>Endereço do Smart Contract</Typography>
-                                <Typography fontSize={desktop ? "24px" : "15px"}>{address.substring(0,5)} ...... {address.substring(address.length-5)}</Typography>
+                                <Typography fontSize={desktop ? "24px" : "15px"}>{address.substring(0, 5)} ...... {address.substring(address.length - 5)}</Typography>
                             </Box>
                             <Box display="flex" justifyContent="space-between" sx={{ mt: "20px" }}>
                                 <Typography fontSize={desktop ? "24px" : "15px"}> ID do token</Typography>

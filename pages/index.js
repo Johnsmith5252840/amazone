@@ -27,7 +27,7 @@ export default function Index() {
                 setName(result.data.name);
             })
             .catch(err => {
-               
+
             })
         if (token && participantID) {
             axios.get(`https://amazonia-cripto.onrender.com/validateAccessToken/${token}/${participantID}`)
@@ -64,7 +64,9 @@ export default function Index() {
                         <>
                             <Grid item xs={desktop ? 6 : 12} className="mockupLeft" sx={{ paddingY: { sm: 2, md: 4 } }}>
                                 <Box display="flex" justifyContent="center" mt="30px">
-                                    <Image src={sign} width={desktop ? '70%' : 300} height={desktop ? "30%" : 200} style={{ borderRadius: "30px" }} />
+                                    <Box className="box" sx={{ width: desktop ? '90%' : 300, height: desktop ? "60vh" : 200 }}>
+                                        <Typography fontSize="32px" sx={{ ml: "60%", mt: "25%" }}>{name}</Typography>
+                                    </Box>
                                 </Box>
                                 <Box className="btn">
                                     <a href={`/spin?participantId=${participantID}`} style={{ fontSize: "32px", color: "white", cursor: "pointer" }}>Obter NFT</a>
@@ -108,7 +110,9 @@ export default function Index() {
                             </Grid>
                             <Grid item xs={desktop ? 6 : 12} className="mockupLeft">
                                 <Box display="flex" justifyContent="center" mt="30px">
-                                    <Image src={sign} width={desktop ? '70%' : 300} height={desktop ? "30%" : 200} style={{ borderRadius: "30px" }} />
+                                    <Box className="box" sx={{ width: desktop ? '90%' : 300, height: desktop ? "60vh" : 200 }}>
+                                        <Typography fontSize="20px" sx={{ ml: "60%", mt: "25%" }}>{name}</Typography>
+                                    </Box>
                                 </Box>
                                 <Box className="btn">
                                     <a href={`/spin?participantId=${participantID}`} style={{ fontSize: "12px", color: "white", cursor: "pointer" }}>Obter NFT</a>
