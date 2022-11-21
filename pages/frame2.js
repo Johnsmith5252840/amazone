@@ -71,7 +71,7 @@ export default function Frame2() {
                     </Box>
                 </Grid>
                 <Grid item xs={desktop ? 6 : 12} className="mockupRight">
-                    <Box sx={{ padding: desktop ? "150px" : "50px", mt: desktop ? "5%" : "2%", width: desktop ? "60vw" : "100%" }}>
+                    <Box sx={{ padding: desktop ? "150px" : "50px", mt: desktop ? "5%" : "2%", width: desktop ? "90vw" : "100%" }}>
                         <Typography fontSize={desktop ? "32px" : "20px"} fontWeight="700">Detalhes Blockchain</Typography>
                         <Box sx={{ padding: desktop ? "50px" : "20px" }}>
                             <Box display="flex" justifyContent="space-between">
