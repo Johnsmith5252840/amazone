@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from "next/router";
 import axios from "axios";
 export default function Frame2() {
-    const desktop = useMediaQuery('(min-width:1024px)');
+    const desktop = useMediaQuery('(min-width:1018px)');
     var router = useRouter();
     var participantID = router.query["participantId"];
     var username = router.query["username"];
@@ -55,7 +55,7 @@ export default function Frame2() {
                         </Box>
                         <Box display="flex" justifyContent="center" mt="30px">
                             <Box className="box" sx={{ width: desktop ? '90%' : 300, height: desktop ? "60vh" : 200 }}>
-                                <Typography fontSize="32px" sx={{ ml: "60%", mt: "25%" }}>{username}</Typography>
+                                <Typography fontSize={desktop?"32px":"20px"} sx={{ ml: "65%", mt: "30%" }}>{username}</Typography>
                             </Box>
                         </Box>
                         <Box gap={2} sx={{ mt: "50px" }}>
@@ -71,30 +71,30 @@ export default function Frame2() {
                     </Box>
                 </Grid>
                 <Grid item xs={desktop ? 6 : 12} className="mockupRight">
-                    <Box sx={{ padding: desktop ? "150px" : "50px", mt: desktop ? "5%" : "2%", width: desktop ? "90vw" : "100%" }}>
+                    <Box sx={{ padding: desktop ? "10px" : "50px", mt: desktop ? "5%" : "2%", width: desktop ? "90vw" : "100%" }}>
                         <Typography fontSize={desktop ? "32px" : "20px"} fontWeight="700">Detalhes Blockchain</Typography>
                         <Box sx={{ padding: desktop ? "50px" : "20px" }}>
                             <Box display="flex" justifyContent="space-between">
-                                <Typography fontSize={desktop ? "24px" : "15px"}>Endereço do Smart Contract</Typography>
-                                <Typography fontSize={desktop ? "24px" : "15px"}>{address.substring(0, 5)} ...... {address.substring(address.length - 5)}</Typography>
+                                <Typography fontSize={desktop ? "18px" : "15px"}>Endereço do Smart Contract</Typography>
+                                <Typography fontSize={desktop ? "18px" : "15px"}>{address.substring(0, 5)} ...... {address.substring(address.length - 5)}</Typography>
                             </Box>
                             <Box display="flex" justifyContent="space-between" sx={{ mt: "20px" }}>
-                                <Typography fontSize={desktop ? "24px" : "15px"}> ID do token</Typography>
-                                <Typography fontSize={desktop ? "24px" : "15px"}>{tokenID}</Typography>
+                                <Typography fontSize={desktop ? "18px" : "15px"}> ID do token</Typography>
+                                <Typography fontSize={desktop ? "18px" : "15px"}>{tokenID}</Typography>
                             </Box>
                             <Box display="flex" justifyContent="space-between" sx={{ mt: "20px" }}>
-                                <Typography fontSize={desktop ? "24px" : "15px"}>Standard dos tokens</Typography>
-                                <Typography fontSize={desktop ? "24px" : "15px"}>ERC-721</Typography>
+                                <Typography fontSize={desktop ? "18px" : "15px"}>Standard dos tokens</Typography>
+                                <Typography fontSize={desktop ? "18px" : "15px"}>ERC-721</Typography>
                             </Box>
                             <Box display="flex" justifyContent="space-between" sx={{ mt: "20px" }}>
-                                <Typography fontSize={desktop ? "24px" : "15px"}>Blockchain</Typography>
-                                <Typography fontSize={desktop ? "24px" : "15px"}> Polygon</Typography>
+                                <Typography fontSize={desktop ? "18px" : "15px"}>Blockchain</Typography>
+                                <Typography fontSize={desktop ? "18px" : "15px"}> Polygon</Typography>
                             </Box>
                         </Box>
                         <Typography fontSize={desktop ? "32px" : "20px"} fontWeight="700">Descrição da Coleção</Typography>
                         <Box sx={{ padding: desktop ? "50px" : '20px' }}>
                             <Box display="flex" justifyContent="space-between">
-                                <Typography fontSize={desktop ? "24px" : "15px"}>{description}</Typography>
+                                <Typography fontSize={desktop ? "18px" : "15px"}>{description}</Typography>
 
                             </Box>
                         </Box>
